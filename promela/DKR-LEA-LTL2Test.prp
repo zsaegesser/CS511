@@ -1,0 +1,1 @@
+ltl p1: <> ([] ((nr_leaders==1)))

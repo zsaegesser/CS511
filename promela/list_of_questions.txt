@@ -1,0 +1,12 @@
+what does end; mean in promela code?
+what exactly does "invalid endstate" mean in jspin?
+what does depth reached mean?
+what does the trace mean? The numbers in the bubbles? How does it show execution steps?
+ebook 9 q5, the while loop, is it necessary?
+ebook 9 q5, should we put endP/endQ at the top?
+ebook 9 q5, do you need atomic around the assertion for critical section?
+    I guess no because it should be atomic by definition, but not sure
+ebook 9 q5, when i put endP at the top of the function I get an error invalid variable
+    What does that mean?
+Warning search not completed -- what does that mean?
+How does do loop work with the :: before the statements ?

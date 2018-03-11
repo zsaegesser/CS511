@@ -1,0 +1,23 @@
+States
+
+Transitions
+
+Statements from -d file
+process=0, source=1, target=2, id=0, line=6.np = 1
+process=0, source=2, target=3, id=1, line=7.np = nq+1
+process=0, source=3, target=7, id=2, line=13.np==0||np<=nq
+process=0, source=7, target=5, id=3, atomic, line=16.critical = critical+1
+process=0, source=5, target=6, id=4, atomic, line=17.assertcritical==1
+process=0, source=6, target=8, id=5, line=18.critical = 0
+process=0, source=8, target=9, id=7, line=21.np = 0
+process=0, source=9, target=0, id=8, line=22.-end-
+process=1, source=1, target=2, id=9, line=25.nq = 1
+process=1, source=2, target=3, id=10, line=26.nq = np+1
+process=1, source=3, target=7, id=11, line=28.nq==0||nq<=np
+process=1, source=7, target=5, id=12, atomic, line=31.critical = critical+1
+process=1, source=5, target=6, id=13, atomic, line=32.assertcritical==1
+process=1, source=6, target=8, id=14, line=33.critical = 0
+process=1, source=8, target=9, id=16, line=36.nq = 0
+process=1, source=9, target=0, id=17, line=37.-end-
+
+Trail

@@ -1,0 +1,28 @@
+//Zach Saegesser, Chris Lyons
+global Semaphore s1 = new Semaphore(0);
+global Semaphore s2 = new Semaphore(0);
+global Semaphore s3 = new Semaphore(0);
+
+thread P: {
+	print("R");
+	s1.release();
+	s3.acquire();
+	print("OK");
+	s3.release();
+}
+
+thread Q: {
+	s1.acquire();
+	print("I");
+	s2.release();
+	s3.acquire();
+	print("OK");
+	s3.release();
+}
+
+thread R: {
+	s2.acquire();
+	print("O");
+	print("OK");
+	s3.release();
+}

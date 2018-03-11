@@ -1,0 +1,9 @@
+#SpinSpider configuration file
+#Thu Nov 30 12:29:58 EST 2017
+DOT_SIZE=0
+PROCESSES=2
+FORMAT=png
+TRAIL_STYLE=0
+VARIABLES=
+TRAIL_CODE=3
+SPIDER_DEBUG=false
